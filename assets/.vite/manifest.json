@@ -1,0 +1,13 @@
+{
+  "frontend/entrypoints/main.css": {
+    "file": "main-BMTRAcdn.css",
+    "src": "frontend/entrypoints/main.css",
+    "isEntry": true
+  },
+  "frontend/entrypoints/main.jsx": {
+    "file": "main-Bj0BJI42.js",
+    "name": "main",
+    "src": "frontend/entrypoints/main.jsx",
+    "isEntry": true
+  }
+}

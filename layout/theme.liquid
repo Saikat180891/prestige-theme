@@ -98,6 +98,13 @@
     <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
 
+    {%- liquid 
+
+      render 'vite-tag' with 'main.css'
+      render 'vite-tag' with 'main.jsx'
+
+     -%}
+
     {% include 'microdata-schema' %}
   </head>
 
@@ -113,7 +120,7 @@
     {%- if template != 'cart' -%}
       {% include 'cart-drawer' %}
     {%- endif -%}
-
+    
     <div class="PageContainer">
       {% section 'announcement' %}
       {% section 'header' %}

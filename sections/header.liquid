@@ -52,7 +52,7 @@ HEADER CONTENT
 {%- endcapture -%}
 
 <header id="section-{{ section.id }}"
-        class="Header Header--{{ section.settings.navigation_style }} {% unless section.settings.navigation_style == 'inline' %}Header--initialized{% endunless %} {% if use_transparent_header %}Header--transparent{% endif %}"
+        class="tw-bg-red-500 Header Header--{{ section.settings.navigation_style }} {% unless section.settings.navigation_style == 'inline' %}Header--initialized{% endunless %} {% if use_transparent_header %}Header--transparent{% endif %}"
         data-section-id="{{ section.id }}"
         data-section-type="header"
         data-section-settings='{{ section_settings }}'
