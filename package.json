@@ -1,44 +1,23 @@
 {
   "name": "prestige-theme",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "run-p -sr \"shopify:dev -- {@}\" \"vite:dev\" --",
-    "deploy": "run-s \"vite:build\" \"shopify:push -- {@}\" --",
-    "shopify:dev": "shopify theme dev",
-    "shopify:push": "shopify theme push",
-    "vite:dev": "vite",
-    "vite:build": "vite build",
-    "develop": "cross-env DEBUG=vite-plugin-shopify:* vite",
-    "prod:build": "cross-env DEBUG=vite-plugin-shopify:* vite build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Saikat180891/prestige-theme.git"
+    "dev": "shopify theme dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Saikat180891/prestige-theme/issues"
-  },
-  "homepage": "https://github.com/Saikat180891/prestige-theme#readme",
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "autoprefixer": "^10.4.20",
-    "cross-env": "^7.0.3",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.7",
-    "vite": "^5.3.5",
-    "vite-plugin-shopify": "^3.0.1"
+    "@shopify/cli": "^3.66.0",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.77.8",
+    "sass-loader": "^12.6.0",
+    "tailwindcss": "^3.4.10"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "alpinejs": "^3.14.1"
   }
 }
